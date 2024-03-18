@@ -264,9 +264,14 @@ Bravo, vous avez créé votre requête par interpolation de nom de fonctions
 ### Questions
 
 1. Avez-vous remarqué quelque-chose avec les fonctions par interpolation ?
+L'autocomplétion affiche des dizaines et des dizaines de possibilités, on dirait que JPA a déjà une implémentation de toutes les fonctions CRUD en interne.
 2. A votre avis, quelle est la manière la plus efficace pour récupérer et mettre en relation plusieurs éléments entre eux ?
+Utiliser les fonctions par interpolation.
 3. Ici, Les components renvoient directement les entités, pensez-vous que cela soit une bonne chose ? Sinon, quelle serait la bonne méthode ?
+Pour alléger les transactions, on pourrait récupérer uniquement les IDs des des entités.
 4. Si je supprime un artiste, que se passe-t-il ?
+Les albums associés sont supprimés en cascade.
 5. Si je récupère une playlist, est-ce que toute l'entité est chargée ?
+Oui.
 ---
 # <div style="text-align: center;">Fin de l'exo 1</div>
